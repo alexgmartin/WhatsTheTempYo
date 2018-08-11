@@ -5,7 +5,7 @@ const request = require('request');
 const path = require('path');
 const dotenv = require('dotenv').config();
 const PORT = process.env.PORT || 5000;
-const apiKey = 'xxx';
+const apiKey = process.env.API_KEY;
 
 express()
   .use(express.static(path.join(__dirname, 'public')))
