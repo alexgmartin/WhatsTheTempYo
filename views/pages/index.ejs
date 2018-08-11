@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Whats Thw Temp Yo?</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<html lang="en">
+
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+  <div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+      <div class="col-md-7 col-sm-10 col-xs-12 col-lg-5 col-xl-4 mx-auto">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="display-3 mb-3 text-center">What's The Temp Yo?</h1>
+            <!--<fieldset>-->
+            <form action="/" method="post">
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <input name="city" type="text" class="form-control" placeholder="Enter a City" required>
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <a href="#">
+                        <i class="fa fa-map-marker fa-2x compass-icon" aria-hidden="true"></i>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-block" onclick="getLocation()" type="submit">Get Weather</button>
+              </div>
+
+            </form>
+            <% if(weather !== null){ %>
+              <p class="text-success text-center">
+                <%= weather %>
+              </p>
+              <% } %>
+
+                <% if(error !== null){ %>
+                  <p class="text-danger text-center">
+                    <%= error %>
+                  </p>
+                  <% } %>
+                    <!--
+                          </fieldset>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

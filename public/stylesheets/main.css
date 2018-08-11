@@ -1,0 +1,37 @@
+body,
+html {
+  height: 100%;
+  background-color: #007bff;
+}
+
+.compass-icon {
+  color: #333;
+}
+
+/*----------MEDIA QUERIES --------- */
+@media (min-width: 320px) {
+  .display-3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .display-3 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Medium devices (tablets) */
+
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops) */
+
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops) */
+
+@media (min-width: 1200px) {
+}
